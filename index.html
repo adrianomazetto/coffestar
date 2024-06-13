@@ -10,16 +10,16 @@
 
     <div class="circulo"></div>
 
-    <img src="./img/logo.png" alt="logotipo" class="logo">
+    <a href="./index.html"><img src="./img/logo.png" alt="logotipo" class="logo"></a>
     <div class="conteudo">
         <div class="caixa-texto">
-            <h2>Não é só pokemon é um <span id="nome">Starbucks</span></h2>
+            <h2>Não é só pokemon é um <span id="nome">POKEMON</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error. Aliquam sapiente voluptatibus corporis at hic, quas beatae totam amet voluptatum ab laboriosam ex, labore nisi officia, quisquam inventore voluptate!</p>
-            <button>Deixe um Like!</button>
+            <button id="botao">Deixe um Like!</button>
         </div>
 
         <div class="caixa-imagem">
-            <img src="./img/img1.png" alt="copo de café verde" class="starcoffe">
+            <img src="./img/logo.png" alt="copo de café verde" class="starcoffe">
         </div>
     </div>
 
@@ -38,23 +38,30 @@
     let amarelo =document.querySelector(".amarelo")
     let rosa = document.querySelector(".rosa")
     let nome = document.querySelector("#nome")
+    let botao = document.querySelector("#botao")
 
     verde.addEventListener("click", () => {
         imgcopo.src ="./img/img1.png"
         circulo.style.background="#F1FA8C"
         nome.innerHTML="Pikachu"
+        nome.style.color="#F1FA8C"
+        botao.style.background="#F1FA8C"
     })
 
     amarelo.addEventListener("click", () => {
         imgcopo.src ="./img/img2.png"
         circulo.style.background="#FD7D24"
         nome.innerHTML="Charmander"
+        nome.style.color="#Fd7d24"
+        botao.style.background="#Fd7d24"
     })
 
     rosa.addEventListener("click", () => {
         imgcopo.src ="./img/img3.png"
         circulo.style.background="#9BCC50"
         nome.innerHTML="Bulbasauro"
+        nome.style.color="#9bcc50"
+        botao.style.background="#9bcc50"
     })
 </script>
 
